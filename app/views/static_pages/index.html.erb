@@ -2,3 +2,18 @@
   <h2>Welcome to mauzy.io</h2>
   <p>One man's journey through the weird world of webdev</p>
 </div>
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-8">
+      <h2>Recent blog posts</h2>
+      <% @posts.each do |post| %>
+        <%=render '/static_pages/recent_posts', post: post %>
+          <% end %>
+    </div>
+    
+    <div class="col-sm-4">
+    </div>
+
+  </div>
+</div>
