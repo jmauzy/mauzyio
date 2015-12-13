@@ -1,12 +1,9 @@
-<div class="jumbotron">
-  <h2>Welcome to mauzy.io</h2>
-  <p>One man's journey through the weird world of webdev</p>
-</div>
+<%= render '/shared/subheader' %>
 <div class="container">
   <div class="row">
 
     <div class="col-sm-8">
-      <h2>Recent blog posts</h2>
+      <h1>Recent blog posts</h1>
       <% @posts.each do |post| %>
         <%=render '/static_pages/recent_posts', post: post %>
           <% end %>
