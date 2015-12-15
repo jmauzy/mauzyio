@@ -1,6 +1,6 @@
 <div>
   <hr>
-  <h2><a href="/blog/<%= post.id %>"><%= post.title %></a></h2>
+  <h2><a href="/blog/<%= post.slug %>"><%= post.title %></a></h2>
   <p>Posted: <%= time_tag(post.created_at) %></p>
   <h3>
     <p class="lead"><%=post.description %></p>
