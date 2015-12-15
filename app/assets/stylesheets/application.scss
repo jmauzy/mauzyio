@@ -28,9 +28,16 @@
 }
 
 .navbar-custom {
+  //max-height: 50px;
   color: #FFFFFF; 
   background-color: #3498db; 
   border-radius: 0;
+  .glyphicon {
+    top: -5px;
+  }
+  .navbar-toggle {
+    max-height: 20px;
+  }
 }
 
 .nav-link {
@@ -72,6 +79,7 @@
   border-radius: 5%;
 
   .profile-image {
+    max-width: 250px;
     border-radius: 100%;
     display: block;
     width: 70%;  
