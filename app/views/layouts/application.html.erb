@@ -10,9 +10,9 @@
 <div class="container container-outer">
 <div class="container">
   <%= render 'shared/header.html.erb' %>
+  <span class="notice"><%= notice %></span>
+  <span class="alert"><%= alert %></span>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
 
   <%= yield %>
   <%= render 'shared/footer.html.erb' %>
