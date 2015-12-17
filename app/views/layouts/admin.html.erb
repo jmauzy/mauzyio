@@ -7,10 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <div class="container container-outer">
 <div class="container">
   <%= render 'shared/header.html.erb' %>
   <p><h1>Admin Panel</h1>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
   <button class="btn btn-success">Manage Posts</button>
 
   <button class="btn btn-success">Create Post</button></p>
