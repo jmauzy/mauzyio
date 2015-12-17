@@ -7,13 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <div class="container container-outer">
 <div class="container">
   <%= render 'shared/header.html.erb' %>
   <p><h1>Admin Panel</h1>
-  <button class="btn btn-success">Manage Posts</button>
+   <%= link_to('Logout', destroy_admin_session_path, :method => :delete) %> 
 
-  <button class="btn btn-success">Create Post</button></p>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <a href="/admin"><button class="btn btn-success">Manage Posts</button></a>
+
+  <a href="/admin/new"><button class="btn btn-success">Create Post</button></p></a>
   <%= yield %>
   <%= render 'shared/footer.html.erb' %>
 </div>

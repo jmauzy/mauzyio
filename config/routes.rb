@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :admins
   root 'static_pages#index'
   #get 'blog/:id' => 'posts#show'
   resources :blog, :as => :posts, :controller => :posts
 
   get 'admin' => 'admin#index'
+  get 'admin/new' => 'admin#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
