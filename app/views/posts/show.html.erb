@@ -2,7 +2,9 @@
   <div class="row">
 
     <div class="col-sm-8">
-      <%= @post.title %>
+      <h1><%= @post.title %></h1>
+      <p>Posted at: <%= @post.created_at %></p>
+      <p class="lead"><%= @post.description %></p>
         <hr>
       <%= markdown(@post.body) %>
       <%= render '/shared/comments' %>

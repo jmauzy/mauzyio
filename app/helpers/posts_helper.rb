@@ -9,7 +9,7 @@ module PostsHelper
     }
 
     extensions = {
-      autolink:             true,
+      autolink:             false,
       superscript:          true,
       disable_indented_code_blocks: true  
     }
