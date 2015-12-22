@@ -5,6 +5,7 @@
       <%= @post.title %>
         <hr>
       <%= markdown(@post.body) %>
+      <%= render '/shared/comments' %>
     </div>
 
     <div class="col-sm-4">
