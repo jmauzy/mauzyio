@@ -1,18 +1,10 @@
-<div class="jumbotron">
-  <hr>
-  <hr>
-  <h2>Welcome to mauzy.io</h2>
-  <p>One man's journey through the weird world of webdev</p>
-  <hr>
-  <hr>
-</div>
 <div class="container">
   <div class="row">
 
     <div class="col-sm-8">
       <%= @post.title %>
         <hr>
-      <%= @post.body %>
+      <%= markdown(@post.body) %>
     </div>
 
     <div class="col-sm-4">
