@@ -18,6 +18,12 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
+          <% if admin_signed_in? %>
+            <li class="nav-link"><%= link_to "Admin", admin_path %></li>
+            <li class="nav-link">
+   <%= link_to('Logout', destroy_admin_session_path, :method => :delete) %> 
+            </button></li>
+          <% end %>
           <li><a class="nav-link" href="#">Blog</a>
           </li>
           <li><a class="nav-link" href="#">About</a>
