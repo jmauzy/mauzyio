@@ -1,6 +1,8 @@
 <ul class="posts-list">
   <% @posts.each do |post| %>
-    <li><%= link_to post.title, post%></li>
+    <li><%= link_to post.title, post %>
+    | <%= link_to "Delete", post, method: :delete %>
+    </li>
 
   <% end %>
 </ul>

@@ -14,6 +14,12 @@ class PostsController < ApplicationController
     end
     redirect_to :back
   end
+  
+  def destroy
+    Post.find(params[:id]).destroy
+    flash[:success] = "Post Deleted"
+    redirect_to :back
+  end
 
   private
     

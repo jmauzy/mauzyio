@@ -8,6 +8,7 @@ class AdminController < ApplicationController
   def new
     @post = Post.new
   end
+
   
 
 end
