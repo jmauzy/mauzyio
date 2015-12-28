@@ -1,8 +1,22 @@
-<ul class="posts-list">
+<table class="table table-hover">
+  <tr>
+    <th>Title</th>
+    <th>Created</th>
+    <th>Edited</th>
+    <th>Views</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+
   <% @posts.each do |post| %>
-    <li><%= link_to post.title, post %>
-    | <%= link_to "Delete", post, method: :delete %>
-    </li>
+    <tr>
+      <td><%= link_to post.title, post %></td>
+      <td><%= post.created_at %></td>
+      <td><%= post.updated_at %></td>
+      <td>views</td>
+      <td>Edit</td>
+      <td><%= link_to "Delete", post, method: :delete %></td>
+    </tr>
 
   <% end %>
-</ul>
+</table>
