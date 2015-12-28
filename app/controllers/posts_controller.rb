@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    Post.increment_counter :views, @post.id
   end
   
   def create
@@ -26,4 +27,7 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :description, :body)
     end
+
+      
+      
 end
