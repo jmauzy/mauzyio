@@ -1,0 +1,20 @@
+
+<%= form_for(@post) do |p| %>
+
+<fieldset class="form-group">
+  <%= p.label :title, "Title" %>
+  <%= p.text_field :title, placeholder: "Post Title", class: "form-control", required: true %>
+</fieldset>
+
+<fieldset class="form-group">
+  <%= p.label :description, "Description" %>
+  <%= p.text_area :description, placeholder: "Description", class: "form-control", required: true %>
+</fieldset>
+
+<fieldset class="form-group">
+  <%= p.label :body, "Body" %>
+  <%= p.cktext_area :body, placeholder: "Post Text", size: "150x25", class: "form-control body-field", required: true %>
+</fieldset>
+<%= p.submit "Post", class: "btn btn-primary" %>
+
+<% end %>
