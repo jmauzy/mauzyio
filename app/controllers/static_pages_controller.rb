@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
     @posts = Post.last(5).reverse
   end
 
+  def about
+  end
+
 end
