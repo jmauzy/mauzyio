@@ -1,4 +1,5 @@
 module PostsHelper
+
   def markdown(text)
     options = {
       filter_html:          true,
@@ -19,4 +20,9 @@ module PostsHelper
 
     markdown.render(text).html_safe
   end
+
+  def popular_posts
+    Post.order(views: :desc).limit(5).select([:title, :slug, :views])
+  end
+
 end
