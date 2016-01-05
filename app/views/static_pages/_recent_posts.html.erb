@@ -1,6 +1,6 @@
 <div>
   <hr>
   <h3><%= link_to post.title, post %></a></h3>
-  <p>Posted: <%= time_tag(post.created_at) %></p>
+  <p><%= posted_date(post.created_at) %></p>
     <p class="lead"><%=post.description %></p>
 </div>
