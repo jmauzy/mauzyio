@@ -5,9 +5,12 @@
       <h1><%= @post.title %></h1>
       <p>Posted at: <%= @post.created_at %></p>
       <p class="lead"><%= @post.description %></p>
+      <%= render '/shared/share_widget' %>
         <hr>
       <%= markdown(@post.body) %>
+      <%= render '/shared/share_widget' %>
       <%= render '/shared/comments' %>
+
     </div>
 
     <div class="col-sm-4">
