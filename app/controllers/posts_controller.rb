@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @title = @post.title + " | Mauzy.io"
     Post.increment_counter :views, @post.id
   end
   
