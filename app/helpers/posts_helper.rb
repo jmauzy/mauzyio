@@ -25,4 +25,6 @@ module PostsHelper
     Post.order(views: :desc).limit(5).select([:title, :slug, :views])
   end
 
+
+
 end

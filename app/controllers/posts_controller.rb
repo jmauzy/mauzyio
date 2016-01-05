@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @title = @post.title + " | Mauzy.io"
-    Post.increment_counter :views, @post.id
+    increment_views(@post)
   end
   
   def edit
@@ -42,6 +42,13 @@ class PostsController < ApplicationController
     
     def post_params
       params.require(:post).permit(:title, :description, :body)
+    end
+
+    
+    def increment_views(post)
+      if !admin_signed_in?
+        Post.increment_counter :views, post.id
+      end
     end
 
       
