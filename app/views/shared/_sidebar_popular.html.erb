@@ -1,8 +1,8 @@
 <div class="popular-sidebar">
-  <h4 class="text-center">Popular Posts</h4>
+  <h4>Popular Posts</h4>
   <hr>
   <% popular_posts.each do |post| %>
-    <h4><b><%= link_to post.title, post %><b></h4>
+    <p><%= link_to post.title, post %></p>
   <% end %>
 </div>
 
