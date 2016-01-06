@@ -1,47 +1,13 @@
-<nav>
-  <div class="navbar navbar-custom">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-        aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="glyphicon glyphicon-menu-hamburger"></span> 
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand nav-link" href="/">Mauzy.io</a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-        </ul>
-
-        <ul class="nav navbar-nav navbar-right">
-          <% if admin_signed_in? %>
-            <li class="nav-link"><%= link_to "Admin", admin_path %></li>
-            <li class="nav-link">
-   <%= link_to('Logout', destroy_admin_session_path, :method => :delete) %> 
-            </button></li>
-          <% end %>
-          <li><a class="nav-link" href="/">Blog</a>
-          </li>
-          <li><a class="nav-link" href="/about">About</a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true"
-            aria-expanded="false">Contact <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="http://twitter.com/JeremyMauzy" target="_blank">Twitter</a>
-              </li>
-              <li><a href="http://github.com/jmauzy/" target="_blank">Github</a>
-              </li>
-              <li><a href="https://www.linkedin.com/in/jeremy-mauzy-6811bb31" target="_blank">Linkedin</a>
-              </li>
-            </ul>
-          </li>
-          </li>
-        </ul>
-      </div>
-    </div>
-</nav>
+<div class="header">
+  <div class="header-title">
+    <h1>Mauzy.io</h1>
+    <p>Learn | Do | Teach</p>
+  </div>
+  <div class="row header-links">
+    <div class="col-sm-2 col-sm-offset-2 col-xs-6 header-link"><%= link_to "Home", root_path %></div>
+    <div class="col-sm-2 col-xs-6 header-link"><%= link_to "Blog", root_path %></div>
+    <div class="col-sm-2 col-xs-6 header-link"><%= link_to "About", "/about" %></div>
+    <div class="col-sm-2 col-xs-6 header-link"><%= link_to "Contact", "#" %></div>
+  </div>
+  <hr>
+</div>

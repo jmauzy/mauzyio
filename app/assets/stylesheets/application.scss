@@ -29,57 +29,31 @@
  body {
  }
 
-.container-outer {
-  background-color: white;
-  padding: 0;
-}
-
-.navbar-custom {
-  //max-height: 50px;
-  color: #FFFFFF; 
-  background-color: #3498db; 
-  border-radius: 0;
-  .glyphicon {
-    top: -5px;
+.header {
+  hr {
+    margin-bottom: 0;
   }
-  .navbar-toggle {
-    max-height: 20px;
+  .header-title {
+    h1 {
+      font-size: 42pt;
+      margin: 35px 0 0 0;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      letter-spacing: 2px;
+      margin: 0 0 30px 0;
+    }
+  }
+  .header-links {
+    text-align: center;
+    font-size: 14pt;
+    a {
+      color: black;
+    } 
+
   }
 }
-
-.nav-link {
-  color: white;
-  font-size: 12pt;
-}
-
-.blue-stripe {
-  background-color: #3498db;
-  height: 50px;
-  width: 100%;
-  display: inline-block;
-}
-
-.title-frame {
-  display: inline-block;
-  width: 40%;
-  float: left;
-  padding-left: 15px;
-}
-
-.stars-frame {
-  float: right;
-  width: 50%;
-  display: inline-block;
-}
-
-.chistar {
-  float: right;
-  width: 15%;
-  max-width: 120px;
-  height: auto;
-  margin: 5%;
-}
-
 .popular-sidebar {
   padding: 7%;
 }
@@ -95,6 +69,11 @@
     width: 70%;  
     margin: 15px auto;
   }
+}
+
+@media screen and (max-width: 767px) {
+   .twitter-sidebar { display: none;  }
+
 }
 
 .sidebar-spacer {

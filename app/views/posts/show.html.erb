@@ -3,8 +3,8 @@
 
     <div class="col-sm-9">
       <h1><%= @post.title %></h1>
-      <p><%= posted_date(@post.created_at) %></p>
       <p class="lead"><%= @post.description %></p>
+      <p><%= posted_date(@post.created_at) %></p>
       <%= render '/shared/share_widget' %>
         <hr>
       <%= markdown(@post.body) %>
