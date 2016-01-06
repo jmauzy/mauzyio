@@ -14,7 +14,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise'
 gem 'redcarpet', '~>3.3.0'
-gem 'ruby', '2.2.0'
 
 
 # Use ActiveModel has_secure_password
