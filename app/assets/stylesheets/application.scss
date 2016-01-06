@@ -86,3 +86,22 @@ code {
   border: 1px solid;
   border-color: #d9d9d9;
 }
+
+.about-body {
+  margin-top: 25px;
+  .code-sample {
+    padding: 20px;
+    margin: 10px 0;
+    img {
+      border: 1px solid #cccccc;
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+  .contact-icons {
+    img {
+      max-width: 100px;
+      width: 100%;
+    }
+  }
+}
