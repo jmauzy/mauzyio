@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'about' => 'static_pages#about'
   #get 'blog/:id' => 'posts#show'
   resources :blog, :as => :posts, :controller => :posts
+  get 'blog/' => 'posts#show'
 
   get 'admin' => 'admin#index'
   get 'admin/new' => 'admin#new'

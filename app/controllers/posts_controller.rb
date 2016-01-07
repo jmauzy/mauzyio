@@ -1,8 +1,12 @@
 class PostsController < ApplicationController
-  before_action :authenticate_admin!, except: [:show]
+  before_action :authenticate_admin!, except: [:show, :index]
 
+  def index
+    redirect_to Post.last
+  end
+  
   def show
-    @post = Post.find(params[:id])
+    @post = Post.find(params[:id]) || Post.last
     @title = @post.title + " | Mauzy.io"
     increment_views(@post)
   end
