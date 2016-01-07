@@ -14,7 +14,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise'
-gem 'redcarpet', '~>3.3.0'
+gem 'redcarpet', github: 'vmg/redcarpet' 
+gem 'coderay'
 
 
 # Use ActiveModel has_secure_password
