@@ -2,14 +2,16 @@
   <div class="row">
 
     <div class="col-sm-9">
-      <h1><%= @post.title %></h1>
-      <p class="lead"><%= @post.description %></p>
-      <p><%= posted_date(@post.created_at) %></p>
-      <%= render '/shared/share_widget' %>
-        <hr>
-      <%= markdown(@post.body) %>
-      <%= render '/shared/share_widget' %>
-      <%= render '/shared/comments' %>
+      <div class="post-body">
+        <h1><%= @post.title %></h1>
+        <p class="lead"><%= @post.description %></p>
+        <p><%= posted_date(@post.created_at) %></p>
+        <%= render '/shared/share_widget' %>
+          <hr>
+        <%= markdown(@post.body) %>
+        <%= render '/shared/share_widget' %>
+        <%= render '/shared/comments' %>
+      </div>
 
     </div>
 

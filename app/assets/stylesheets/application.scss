@@ -90,6 +90,10 @@ code {
 pre {
   display: inline-block; 
   font-size: 10pt;
+  max-width: 100%;
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
   padding: 8px;
 }
 
