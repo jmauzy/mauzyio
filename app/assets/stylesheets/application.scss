@@ -30,10 +30,16 @@
  }
 
 .header {
+  a {
+    color: black;
+  }
   hr {
-    margin-bottom: 0;
+    margin-bottom: 25px;
   }
   .header-title {
+    a {
+      text-decoration: none;
+    }
     h1 {
       font-size: 48pt;
       margin: 35px 0 0 0;
@@ -48,10 +54,6 @@
   .header-links {
     text-align: center;
     font-size: 14pt;
-    a {
-      color: black;
-    } 
-
   }
 }
 .popular-sidebar {
@@ -99,9 +101,6 @@ pre {
 
 .about-body {
   margin-top: 25px;
-  h2 {
-    margin-top: 50px;
-  }
   .sample-container {
     margin-bottom: 0;
   }
@@ -114,15 +113,22 @@ pre {
       width: 100%;
     }
   }
-  .contact-icons {
-    padding: 25px;
-    img {
-      max-width: 100px;
-      //width: 100%;
-    }
-  }
 }
 
 .post-body {
   margin-bottom: 50px;
+}
+
+.footer {
+  margin-bottom: 20px;
+  .contact-list {
+    text-align: center;  
+    .contact-icon {
+      
+      margin: 10px 15px;
+      width: 30px;
+      display: inline-block; 
+        //width: 100%;
+    }
+  }
 }
