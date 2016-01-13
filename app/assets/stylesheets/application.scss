@@ -98,11 +98,12 @@ code {
 pre {
   display: inline-block; 
   font-size: 10pt;
+  width: 100%;
   max-width: 100%;
   overflow: auto;
   word-wrap: normal;
   white-space: pre;
-  padding: 8px;
+  padding: 10px;
 }
 
 .about-body {
