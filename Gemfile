@@ -16,6 +16,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise'
 gem 'redcarpet', github: 'vmg/redcarpet' 
 gem 'coderay'
+gem 'react-rails', '1.5.0'
 
 
 # Use ActiveModel has_secure_password
