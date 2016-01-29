@@ -1,3 +1,36 @@
+var CreatePane = React.createClass({
+  render: function() {
+    return (
+      <p>Create Post</p>
+    );
+  }
+});
+
+var ManagePane = React.createClass({
+  render: function() {
+    return (
+      <p>Manage Posts</p>
+    );
+  }
+});
+
+var PreviewPane = React.createClass({
+  render: function() {
+    return (
+      <p>Preview Post</p>
+    );
+  }
+});
+var AdminPanel = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <h1>Admin Panel</h1>
+        <Navigation />
+      </div>
+    );
+  }
+});
 
 var Navigation = React.createClass({
   getDefaultProps: function() {
@@ -7,22 +40,22 @@ var Navigation = React.createClass({
           id: 1,
           title: "Manage Posts",
           className: "active",
+          componentName: ManagePane,
           paneId: "manage-pane",
-          component: "ManagePosts"
         },
         {
           id: 2,
           title: "Create Post",
           className: "",
+          componentName: CreatePane,
           paneId: "create-pane",
-          component: "CreatePost"
         },
         {
           id: 3,
           title: "Preview Post",
           className: "",
+          componentName: PreviewPane,
           paneId: "preview-pane",
-          component: "PreviewPost"
         }
       ]
     }
@@ -62,7 +95,7 @@ var Tab = React.createClass({
       </li>  
     );
   }
-})
+});
 
 var NavPanes = React.createClass({
   render: function() {
@@ -79,10 +112,14 @@ var NavPanes = React.createClass({
   }
 });
 
+
 var Pane = React.createClass({
   render: function() {
     return (
-      <div role="tabpanel" className={this.props.data.className} className={"tab-pane "+this.props.data.className} id={this.props.data.paneId}>{this.props.data.title}</div>
+      <div role="tabpanel" className={this.props.data.className} className={"tab-pane "+this.props.data.className} id={this.props.data.paneId}>
+        <this.props.data.componentName /> 
+      </div>
     );
   }
-})
+});
+
