@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   #get 'blog/:id' => 'posts#show'
   resources :blog, :as => :posts, :controller => :posts
   get 'blog/' => 'posts#show'
+  get 'posts/all' => 'posts#all'
 
   get 'admin' => 'admin#index'
   get 'admin/new' => 'admin#new'

@@ -4,6 +4,10 @@ class PostsController < ApplicationController
   def index
     redirect_to Post.last
   end
+
+  def all
+    render json: Post.all.reverse
+  end
   
   def show
     @post = Post.find(params[:id]) || Post.last

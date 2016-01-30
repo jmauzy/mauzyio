@@ -7,12 +7,139 @@ var CreatePane = React.createClass({
 });
 
 var ManagePane = React.createClass({
+  getPosts: function() {
+    $.ajax({
+      url: '/posts/all',
+      dataType: 'json',
+      success: function(data) {
+        this.setState({posts: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error('/posts/all', status, err.toString());
+      }.bind(this)
+    });
+  },
+  getInitialState: function() {
+    return {posts: []};
+  },
+  componentDidMount: function() {
+    this.getPosts();
+  },
   render: function() {
     return (
-      <p>Manage Posts</p>
+      <div>
+        <PostsTable posts={this.state.posts} />
+      </div>
     );
   }
 });
+
+var PostsTable = React.createClass({
+  getDefaultProps: function() {
+    return {
+      headers: [
+        "Title",
+        "Created",
+        "Edited",
+        "Views",
+        "Edit",
+        "Delete"
+      ]
+    };
+  },
+  render: function() {
+    var tableHeader = this.props.headers.map(function(header) {
+      return (
+        <TableHeader header={header} />
+      );
+    });
+    var tableData = this.props.posts.map(function(post) {
+      return (
+        <TableRow post={post} />
+      );
+    });
+    return (
+      <div>
+        <table className="table table-hover">
+          <tbody>
+            <tr>
+              {tableHeader}
+            </tr>
+            {tableData}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+});
+
+var TableHeader = React.createClass({
+  render: function() {
+    return (
+      <th>{this.props.header}</th>  
+    );
+  }
+});
+
+var TableRow = React.createClass({
+  render: function() {
+    return (
+      <tr>
+        <td>
+          <PostLink 
+            slug={this.props.post.slug}
+            title={this.props.post.title}
+          />
+        </td>
+      
+        <td>
+          {this.props.post.created_at}
+        </td>
+
+        <td>
+          {this.props.post.updated_at}
+        </td>
+
+        <td>
+          {this.props.post.views}
+        </td>
+
+        <td>
+          Edit
+        </td>
+
+        <td>
+          <DeleteLink
+            slug={this.props.post.slug}
+          />
+        </td>
+      </tr>
+    );
+  }
+});
+
+var PostLink = React.createClass({
+  render: function() {
+    return (
+      <a 
+        href={'/blog/'+this.props.slug}>
+        {this.props.title}
+      </a>
+    );
+  }
+});
+
+var DeleteLink = React.createClass({
+  render: function() {
+    return (
+      <a 
+        href={'/blog/'+this.props.slug}
+        data-method="delete">
+        Delete
+      </a>
+    )
+  }
+})
 
 var PreviewPane = React.createClass({
   render: function() {
