@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   devise_for :admins
   root 'static_pages#index'
-  get 'about' => 'static_pages#about'
-  get 'contact' => 'static_pages#contact'
+  get 'about' => 'static_pages#index'
   #get 'blog/:id' => 'posts#show'
   resources :blog, :as => :posts, :controller => :posts
   get 'blog/' => 'posts#show'

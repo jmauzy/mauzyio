@@ -2,21 +2,18 @@
 <html>
 <head>
   <title><%= @title || "Mauzy.io" %></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', params[:controller], media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', params[:controller],'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="container">
-  <%= render 'shared/header' %>
+  <!-- <%= render 'shared/header' %> -->
 
 
   <%= yield %>
-  <%= render 'shared/footer.html.erb' %>
-</div>
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

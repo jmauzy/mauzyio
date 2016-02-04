@@ -1,13 +1,26 @@
-<div class="header">
-  <div class="header-title">
-    <h1><a href="/">Mauzy.io</a></h1>
-    <p>Stay Curious.</p>
-  </div>
-  <div class="row header-links">
-    <div class="col-sm-2 col-sm-offset-2 col-xs-6 header-link"><%= link_to "Home", root_path %></div>
-    <div class="col-sm-2 col-xs-6 header-link"><%= link_to "Blog", posts_path %></div>
-    <div class="col-sm-2 col-xs-6 header-link"><%= link_to "About", "/about" %></div>
-    <div class="col-sm-2 col-xs-6 header-link"><%= link_to "Contact", "/contact" %></div>
-  </div>
-  <hr>
-</div>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" 
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapsible"
+              aria-expanded="false"
+      >
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Jeremy Mauzy</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="collapsible">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">About</a></li>
+        <li class="active"><a href="#">Blog</a></li>
+        <li class="active"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+</nav>
+

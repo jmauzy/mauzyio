@@ -1,6 +1,160 @@
 // Place all the styles related to the staticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.code-sample {
-  display: none;
+
+* {
+  //border: 1px solid red;
+}
+
+.bg-image {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  min-height: 700px;
+  z-index: -99;
+  background-image: image-url("chi_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.header-wrapper {
+  position: relative;
+  padding-top: 40px;
+  color: white;
+  text-transform: uppercase;
+  //z-index: 1;
+  
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: #e44d26;
+  }
+
+  .header-title {
+    position: relative;
+    display: inline-block;
+    float: left;
+    img {
+      max-height: 50px;
+    }
+  }
+
+  .header-navlinks {
+    padding-top: 7px;
+    display: inline-block;
+    float: right;
+    a {
+      margin: 15px 30px;
+    }
+  }
+}
+
+.image-overlay {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  background-color: black;
+  opacity: .55;
+  clear: none;
+  z-index: 0;
+}
+
+.hero-row {
+  margin: 130px 0;
+  color: white;
+  position: relative;
+
+  h1 {
+    font-size: 55px;
+    font-weight: 500;
+  }
+  p {
+    margin: 40px auto;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  button {
+    background-color: #e44d26;
+  }
+}
+
+.content-row {
+  line-height: 26px;
+  padding: 45px 0 45px 0;
+}
+
+.tools-row {
+  position: relative;
+  padding-bottom: 45px;
+  background-color: white;
+  p {
+    width: 70%;
+  }
+  .lang-wrapper {
+    padding: 15px 0 15px 0;
+    .lang-icon {
+      width: 55px;
+      height: 100%;
+      display: inline-block;
+      img {
+      max-width: 55px;
+      max-height: 55px;
+      }
+    }
+    .lang-details {
+      position: absolute; 
+      margin-left: 15px;
+      display: inline-block;
+      width: 300px;
+      p {
+        font-weight: 800;
+        padding-top: 0;
+        margin-bottom: 0;
+      }
+      .bub {
+        margin: 0 auto;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+      .empty-bub {
+        border: 1px solid black;
+      }
+      .html-bub {
+        background-color: #e44d26;
+      }
+      .css-bub {
+       background-color: #1572b6;
+      }
+      .js-bub {
+        background-color: #f0db4f;
+      }
+      .react-bub {
+        background-color: #4193a9;
+      }
+      .node-bub {
+        background-color: #81cb29;
+      }
+      .git-bub {
+        background-color: #f05033;
+      }
+      .rails-bub {
+        background-color: #962534;
+      }
+      .ps-bub {
+        background-color: #0a72da;
+      }
+
+    }
+  }
+}
+
+.projects-header {
+  color: white;
+  padding-left: 30%;
+  background-image: image-url("code_bg.jpg");
 }
