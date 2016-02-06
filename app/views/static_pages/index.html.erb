@@ -3,7 +3,9 @@
 <div class="header-wrapper">
   <div class="container">
     <div class="header-title">
-      <a href="/"><%= image_tag ("jm_logo.png") %></a>
+      <a href="/">
+        <%=image_tag ( "jm_logo.png") %>
+      </a>
     </div>
     <div class="header-navlinks">
       <a href="#">About</a>
@@ -16,151 +18,252 @@
 <div class="hero-row">
   <div class="container">
     <h1>The web done right.</h1>
-    <p>I am a full-stack web developer living in Chicago, Illinois. I leverage modern tools and standards to create engaging, responsive sites and  enjoy taking on new challenges of all kinds. If you are looking to hire or are a business in need of an online presence, I'd love to discuss how I can help have an immediate impact on your business, project, or non-profit.</p>
-    <button class="btn btn-lg ">I need a website</button>
-    <button class="btn btn-lg ">I'm looking to hire</button>
+    <p>I am a full-stack web developer living in Chicago, Illinois. I leverage modern
+    tools and standards to create engaging, responsive sites and enjoy taking
+    on new challenges of all kinds. If you are looking to hire or are a business
+    in need of an online presence, I'd love to discuss how I can help have an
+    immediate impact on your business, project, or non-profit.</p>
+    <button class="btn btn-lg ">Contact Me</button>
   </div>
 </div>
 
-<div class="content-row tools-row">
+
+<div class="content-row projects-header">
   <div class="container">
-    <h1>Tools of the trade.</h1>
-    <p>Modern web languages and frameworks are expanding faster than ever. Knowing which to reach for in a given situation is more important than ever. I love learning new languages, frameworks and techniques as well as furthering my knowledge of those I already use. Here are some of the tools I use regularly and my proficency with each (from familiarity to mastery):</p>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="lang-wrapper">
-          <div class="lang-icon">
-            <%= image_tag ("HTML5.png") %>
-          </div>
-          <div class="lang-details">
-            <p>HTML</p>
-            <div class="bub html-bub"></div>
-            <div class="bub html-bub"></div>
-            <div class="bub html-bub"></div>
-            <div class="bub html-bub"></div>
-            <div class="bub html-bub"></div>
-            <div class="bub empty-bub"></div>
-          </div>
-        </div>
-        <div class="lang-wrapper">
-          <div class="lang-icon">
-            <%= image_tag ("CSS3.png") %>
-          </div>
-          <div class="lang-details">
-            <p>CSS (Incl. Bootstrap & SASS)</p>
-            <div class="bub css-bub"></div>
-            <div class="bub css-bub"></div>
-            <div class="bub css-bub"></div>
-            <div class="bub css-bub"></div>
-            <div class="bub css-bub"></div>
-            <div class="bub empty-bub"></div>
-          </div>
-        </div>
-        <div class="lang-wrapper">
-          <div class="lang-icon">
-            <%= image_tag ("JavaScript.png") %>
-          </div>
-          <div class="lang-details">
-            <p>JavaScript</p>
-            <div class="bub js-bub"></div>
-            <div class="bub js-bub"></div>
-            <div class="bub js-bub"></div>
-            <div class="bub js-bub"></div>
-            <div class="bub empty-bub"></div>
-            <div class="bub empty-bub"></div>
-          </div>
-        </div>
-        <div class="lang-wrapper">
-          <div class="lang-icon">
-            <%= image_tag ("React.png") %>
-          </div>
-          <div class="lang-details">
-            <p>React.js</p>
-            <div class="bub react-bub"></div>
-            <div class="bub react-bub"></div>
-            <div class="bub react-bub"></div>
-            <div class="bub empty-bub"></div>
-            <div class="bub empty-bub"></div>
-            <div class="bub empty-bub"></div>
-          </div>
-        </div>
+    <h1>My work.</h1> 
+    <p>Below you will find code samples and production code of projects I have built
+    along my journey. For the latest information about what I've been working
+    on recently, check out my <a href "/blog">blog.</a></p>
+    <div class="row sample-container">
+
+      <div class="col-md-4 col-sm-6 code-sample">
+        <h4>Fakebook (Facebook clone)</h4>
+        <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/fakebook2.png" class="sample-image img-responsive ">
+        <p><b>Technologies/concepts:</b> Rails, Devise w/ OAuth (Facebook Login), relational
+        models (user, post, comment, like)</p>
+        <p><b>Links:</b>  <a target="_blank" href="http://odin-fakebook.herokuapp.com/">Production</a> |
+        <a target="_blank" href="https://www.github.com/jmauzy/fakebook">GitHub</a>
+        <p><b>Note: Free tier Heroku hosting. May take 5-10 seconds for server to spin up after clicking link.</b>
+        </p>
       </div>
 
-      <div class="col-sm-6">
-
-        <div class="lang-wrapper">
-          <div class="lang-icon">
-            <%= image_tag ("Rails.png") %>
-          </div>
-          <div class="lang-details">
-            <p>Ruby on Rails</p>
-            <div class="bub rails-bub"></div>
-            <div class="bub rails-bub"></div>
-            <div class="bub rails-bub"></div>
-            <div class="bub rails-bub"></div>
-            <div class="bub empty-bub"></div>
-            <div class="bub empty-bub"></div>
-          </div>
-        </div>
-        
-        <div class="lang-wrapper">
-          <div class="lang-icon">
-            <%= image_tag ("Node.png") %>
-          </div>
-          <div class="lang-details">
-            <p>Node.js</p>
-            <div class="bub node-bub"></div>
-            <div class="bub node-bub"></div>
-            <div class="bub empty-bub"></div>
-            <div class="bub empty-bub"></div>
-            <div class="bub empty-bub"></div>
-            <div class="bub empty-bub"></div>
-          </div>
-        </div>
-
-        <div class="lang-wrapper">
-          <div class="lang-icon">
-            <%= image_tag ("Git.png") %>
-          </div>
-          <div class="lang-details">
-            <p>Git</p>
-            <div class="bub git-bub"></div>
-            <div class="bub git-bub"></div>
-            <div class="bub git-bub"></div>
-            <div class="bub git-bub"></div>
-            <div class="bub git-bub"></div>
-            <div class="bub empty-bub"></div>
-          </div>
-        </div>
-
-        <div class="lang-wrapper">
-          <div class="lang-icon">
-            <%= image_tag ("PS.png") %>
-          </div>
-          <div class="lang-details">
-            <p>Adobe Photoshop</p>
-            <div class="bub ps-bub"></div>
-            <div class="bub ps-bub"></div>
-            <div class="bub ps-bub"></div>
-            <div class="bub empty-bub"></div>
-            <div class="bub empty-bub"></div>
-            <div class="bub empty-bub"></div>
-          </div>
-        </div>
-
+      <div class="col-md-4 col-sm-6 code-sample">
+        <h4>Mauzy.io (CMS/Portfolio)</h4>
+        <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/mauzyiosample.png"
+             class="sample-image img-responsive ">
+        <p><b>Technologies/concepts:</b> Ruby On Rails, React.js, Devise, Markdown</p>
+        <p><b>Links:</b>  <a target="_blank" href="http://www.mauzy.io">Production</a> |
+        <a target="_blank" href="https://www.github.com/jmauzy/mauzyio">GitHub</a>
       </div>
 
+      <div class="clearfix visible-sm-block"></div>
+
+
+      <div class="col-md-4 col-sm-6 code-sample">
+        <h4>Wikipedia Search Widget</h4>
+        <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/wikisample.png"
+             class="sample-image img-responsive ">
+        <p><b>Technologies/concepts:</b>Vanilla JavaScript, Angular JS, Wikipedia API</p>
+        <p><b>Links:</b>  <a target="_blank" href="http://codepen.io/apositivejam/full/LpEvPG/">CodePen</a> 
+      </div>
+
+      <div class="clearfix visible-lg-block visible-md-block"></div>
+
+      <div class="col-md-4 col-sm-6 code-sample">
+        <h4>Javascript Pomodoro Timer</h4>
+        <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/pomsample.png" class="sample-image img-responsive ">
+        <p><b>Technologies/concepts:</b>Vanilla JavaScript, jQuery</p>
+        <p><b>Links:</b>  <a target="_blank" href="http://codepen.io/apositivejam/full/JdQgGL/">CodePen</a> 
+      </div>
+
+      <div class="clearfix visible-sm-block"></div>
+
+      <div class="col-md-4 col-sm-6 code-sample">
+        <h4>Javascript Simon Game</h4>
+        <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/simonsample.png"
+             class="sample-image img-responsive ">
+        <p><b>Technologies/concepts:</b>Vanilla JavaScript, Angular JS, Howl.js</p>
+        <p><b>Links:</b>  <a target="_blank" href="http://codepen.io/apositivejam/full/YyxbmL/">CodePen</a> 
+      </div>
+
+      <div class="col-md-4 col-sm-6 code-sample">
+        <h4>JavaScript Calculator</h4>
+        <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/calcsample.png"
+             class="sample-image img-responsive ">
+        <p><b>Technologies/concepts:</b>CSS, Angular JS</p>
+        <p><b>Links:</b>  <a target="_blank" href="http://codepen.io/apositivejam/full/ZbGYKg/">CodePen</a> 
+      </div>
     </div>
-    <p>Working in Django, Wordpress or something else? Let's discuss it!</p>
   </div>
-</div>
 
-  <div class="content-row projects-header">
+    <div class="content-row tools-row">
+      <div class="tools-header">
+        <div class="container">
+          <h1>Tools of the trade.</h1>
+          <p>Modern web languages and frameworks are expanding faster every day. Knowing
+          which to reach for in a given situation is more important than ever. I love
+          learning new languages, frameworks and techniques as well as furthering my
+          knowledge of those I already use. Here are some of the tools I use regularly
+          and my proficency with each (from familiarity to mastery):</p>
+        </div>
+      </div>
+
+      <div class="container tools-content">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="lang-wrapper">
+              <div class="lang-icon">
+                <%=image_tag ( "HTML5.png") %>
+              </div>
+              <div class="lang-details">
+                <p>HTML</p>
+                <div class="bub html-bub"></div>
+                <div class="bub html-bub"></div>
+                <div class="bub html-bub"></div>
+                <div class="bub html-bub"></div>
+                <div class="bub html-bub"></div>
+                <div class="bub empty-bub"></div>
+              </div>
+            </div>
+            <div class="lang-wrapper">
+              <div class="lang-icon">
+                <%=image_tag ( "CSS3.png") %>
+              </div>
+              <div class="lang-details">
+                <p>CSS (Incl. Bootstrap & SASS)</p>
+                <div class="bub css-bub"></div>
+                <div class="bub css-bub"></div>
+                <div class="bub css-bub"></div>
+                <div class="bub css-bub"></div>
+                <div class="bub css-bub"></div>
+                <div class="bub empty-bub"></div>
+              </div>
+            </div>
+            <div class="lang-wrapper">
+              <div class="lang-icon">
+                <%=image_tag ( "JavaScript.png") %>
+              </div>
+              <div class="lang-details">
+                <p>JavaScript</p>
+                <div class="bub js-bub"></div>
+                <div class="bub js-bub"></div>
+                <div class="bub js-bub"></div>
+                <div class="bub js-bub"></div>
+                <div class="bub empty-bub"></div>
+                <div class="bub empty-bub"></div>
+              </div>
+            </div>
+            <div class="lang-wrapper">
+              <div class="lang-icon">
+                <%=image_tag ( "React.png") %>
+              </div>
+              <div class="lang-details">
+                <p>React.js</p>
+                <div class="bub react-bub"></div>
+                <div class="bub react-bub"></div>
+                <div class="bub react-bub"></div>
+                <div class="bub empty-bub"></div>
+                <div class="bub empty-bub"></div>
+                <div class="bub empty-bub"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+
+            <div class="lang-wrapper">
+              <div class="lang-icon">
+                <%=image_tag ( "Rails.png") %>
+              </div>
+              <div class="lang-details">
+                <p>Ruby on Rails</p>
+                <div class="bub rails-bub"></div>
+                <div class="bub rails-bub"></div>
+                <div class="bub rails-bub"></div>
+                <div class="bub rails-bub"></div>
+                <div class="bub empty-bub"></div>
+                <div class="bub empty-bub"></div>
+              </div>
+            </div>
+
+            <div class="lang-wrapper">
+              <div class="lang-icon">
+                <%= image_tag ( "Node.png") %>
+              </div>
+              <div class="lang-details">
+                <p>Node.js</p>
+                <div class="bub node-bub"></div>
+                <div class="bub node-bub"></div>
+                <div class="bub empty-bub"></div>
+                <div class="bub empty-bub"></div>
+                <div class="bub empty-bub"></div>
+                <div class="bub empty-bub"></div>
+              </div>
+            </div>
+
+            <div class="lang-wrapper">
+              <div class="lang-icon">
+                <%=image_tag ( "Git.png") %>
+              </div>
+              <div class="lang-details">
+                <p>Git</p>
+                <div class="bub git-bub"></div>
+                <div class="bub git-bub"></div>
+                <div class="bub git-bub"></div>
+                <div class="bub git-bub"></div>
+                <div class="bub git-bub"></div>
+                <div class="bub empty-bub"></div>
+              </div>
+            </div>
+
+            <div class="lang-wrapper">
+              <div class="lang-icon">
+                <%=image_tag ( "PS.png") %>
+              </div>
+              <div class="lang-details">
+                <p>Adobe Photoshop</p>
+                <div class="bub ps-bub"></div>
+                <div class="bub ps-bub"></div>
+                <div class="bub ps-bub"></div>
+                <div class="bub empty-bub"></div>
+                <div class="bub empty-bub"></div>
+                <div class="bub empty-bub"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <p class="tools-footer">Working in Django, Wordpress or something else? Let's discuss it!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-row">
     <div class="container">
-      <h1>My work.</h1>  
-      <p>Below you will find code samples and production code of projects I have built along my journey. For the latest information about what I've been working on recently, check out my blog.</p>
+      <h1>Contact Me</h1>
+      <p>Use this form to reach out with any questions. You can also contact me directly at <a href="mailto:jeremymauzy@gmail.com">jeremymauzy@gmail.com</a>
+      <form accept-charset="UTF-8" action="https://formkeep.com/f/4380c545f069" method="POST">
+        <input type="hidden" name="utf8" value="✓">
+        <fieldset class="form-group">
+          <label for="name-input">Name:</label>
+          <input type="text" name="name" id="name-input" placeholder="Your Name">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="email-input">Email:</label>
+          <input type="email" name="email" id="email-input" placeholder="Your Email">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="phone-input">Phone:</label>
+          <input type="tel" name="phone" id="phone-input" placeholder="Phone Number">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="comment-input">Comment:</label>
+          <textarea type="text-area" name="comment" placeholder="Comment"></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </div>
-</div>
-
+  </div>
 
