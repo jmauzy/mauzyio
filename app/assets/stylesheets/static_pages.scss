@@ -12,6 +12,11 @@ h1 {
   margin-bottom: 25px;
 }
 
+button {
+  color: white;
+  background-color: $theme-color;
+}
+
 .bg-image {
   position: fixed;
   margin: 0;
@@ -186,8 +191,12 @@ h1 {
     max-width: 300px;
     width: 100%;
   }
+  .project-tag {
+    background-color: $theme-color;
+  }
 }
 
 .contact-row {
+  background-color: #e6e6e6;
   padding: 45px 0 45px 0;
 }
