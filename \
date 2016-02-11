@@ -124,9 +124,8 @@ h3 {
   }
   background-color: white;
   img {
-    width: 100%;
     margin: 15px 0;
-    max-width: 350px;
+    max-width: 400px;
     border: 1px solid gray;
   }
   .project-tag {
@@ -208,34 +207,20 @@ h3 {
 
 
 .contact-row {
-  hr {
-    border: 1px solid #b3b3b3;
-  }
   background-color: #e6e6e6;
+  margin: auto;
   a{
     text-decoration: none;
   }
-  .photo-group {
-    vertical-align: top;
-    display: inline-block;
-    width: 48%;
-    .contact-info {
-      text-style: bold;
-      margin: 20% 0;
-    }
-  }
   .contact-image {
     max-width: 200px;
-    width: 100%;
     border: 10px solid white;
     border-radius: 50%;
 
   }
-  .socicon-wrapper {
-    margin-top: 15px;
-  }
   .socicon {
-    margin: 40px 25px 0 0 ;
+    margin: 0 10px;
+    text-align: center;
     font-size: 36pt;
     color: $theme-color;
   }

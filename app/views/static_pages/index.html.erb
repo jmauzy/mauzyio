@@ -17,7 +17,7 @@
 
 <div class="hero-row">
   <div class="container">
-    <h1>The web done right.</h1>
+    <h1 class="section-title">The web done right.</h1>
     <p>I am a full-stack web developer living in Chicago, Illinois. I leverage modern
     tools and standards to create engaging, responsive sites and enjoy taking
     on new challenges of all kinds. If you are looking to hire or are a business
@@ -28,28 +28,26 @@
 </div>
 
 
-<div class="content-row projects-header">
+<div class="content-row projects-row">
   <div class="container">
-    <h1>My work.</h1> 
-    <p>Below you will find code samples and production code of projects I have built
+    <h1 class="section-title">My work.</h1> 
+    <p class="section-subtitle">Below you will find code samples and production code of projects I have built
     along my journey. For the latest information about what I've been working
     on recently, check out my <a href "/blog">blog.</a></p>
     <div class="row">
 
-      <div class="col-md-4 col-sm-6 code-sample">
-        <h4>Fakebook (Facebook clone)</h4>
-        <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/fakebook2.png" class="sample-image img-responsive ">
+      <div class="col-sm-6 code-sample">
+        <h3>Fakebook (Facebook clone)</h3>
+        <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/fakebook2.png" class="sample-image img-responsive">
         <span class="label project-tag">Ruby on Rails</span>
         <span class="label project-tag">Devise w/ OAuth</span>
         <span class="label project-tag">Relational Databases</span>
         <p><b>View:</b>  <a target="_blank" href="http://odin-fakebook.herokuapp.com/">Production</a> |
         <a target="_blank" href="https://www.github.com/jmauzy/fakebook">GitHub</a>
-        <p><b>Note: May take 5-10 seconds to spin up.</b>
-        </p>
       </div>
 
-      <div class="col-md-4 col-sm-6 code-sample">
-        <h4>Mauzy.io (CMS/Portfolio)</h4>
+      <div class="col-sm-6 code-sample">
+        <h3>Mauzy.io (CMS/Portfolio)</h3>
         <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/mauzyiosample.png"
              class="sample-image img-responsive ">
         <span class="label project-tag">Ruby on Rails</span>
@@ -63,8 +61,8 @@
       <div class="clearfix visible-sm-block"></div>
 
 
-      <div class="col-md-4 col-sm-6 code-sample">
-        <h4>Wikipedia Search Widget</h4>
+      <div class="col-sm-6 code-sample">
+        <h3>Wikipedia Search Widget</h3>
         <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/wikisample.png"
              class="sample-image img-responsive ">
         <span class="label project-tag">Vanilla JavaScript</span>
@@ -73,10 +71,8 @@
         <p><b>View:</b>  <a target="_blank" href="http://codepen.io/apositivejam/full/LpEvPG/">CodePen</a> 
       </div>
 
-      <div class="clearfix visible-lg-block visible-md-block"></div>
-
-      <div class="col-md-4 col-sm-6 code-sample">
-        <h4>Javascript Pomodoro Timer</h4>
+      <div class="col-sm-6 code-sample">
+        <h3>Javascript Pomodoro Timer</h3>
         <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/pomsample.png" class="sample-image img-responsive ">
         <span class="label project-tag">Vanilla JavaScript</span>
         <span class="label project-tag">jQuery</span>
@@ -85,8 +81,8 @@
 
       <div class="clearfix visible-sm-block"></div>
 
-      <div class="col-md-4 col-sm-6 code-sample">
-        <h4>Javascript Simon Game</h4>
+      <div class="col-sm-6 code-sample">
+        <h3>Javascript Simon Game</h3>
         <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/simonsample.png"
              class="sample-image img-responsive ">
         <span class="label project-tag">Vanilla JavaScript</span>
@@ -95,8 +91,8 @@
         <p><b>View:</b>  <a target="_blank" href="http://codepen.io/apositivejam/full/YyxbmL/">CodePen</a> 
       </div>
 
-      <div class="col-md-4 col-sm-6 code-sample">
-        <h4>JavaScript Calculator</h4>
+      <div class="col-sm-6 code-sample">
+        <h3>JavaScript Calculator</h3>
         <img src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/calcsample.png"
              class="sample-image img-responsive ">
         <span class="label project-tag">CSS</span>
@@ -108,23 +104,19 @@
 </div>
 
     <div class="content-row tools-row">
-      <div class="tools-header">
-        <div class="container">
-          <h1>Tools of the trade.</h1>
-          <p>Modern web languages and frameworks are expanding faster every day. Knowing
+      <div class="container tools-content">
+          <h1 class="section-title">My tools.</h1>
+          <p class="section-subtitle">Modern web languages and frameworks are expanding faster every day. Knowing
           which to reach for in a given situation is more important than ever. I love
           learning new languages, frameworks and techniques as well as furthering my
           knowledge of those I already use. Here are some of the tools I use regularly
           and my proficency with each (from familiarity to mastery):</p>
-        </div>
-      </div>
 
-      <div class="container tools-content">
         <div class="row">
           <div class="col-sm-6">
             <div class="lang-wrapper">
               <div class="lang-icon">
-                <%=image_tag ( "HTML5.png") %>
+                <%=image_tag ( "https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/HTML5.png") %>
               </div>
               <div class="lang-details">
                 <p>HTML</p>
@@ -138,7 +130,7 @@
             </div>
             <div class="lang-wrapper">
               <div class="lang-icon">
-                <%=image_tag ( "CSS3.png") %>
+                <%=image_tag ( "https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/CSS3.png") %>
               </div>
               <div class="lang-details">
                 <p>CSS (Incl. Bootstrap & SASS)</p>
@@ -152,7 +144,7 @@
             </div>
             <div class="lang-wrapper">
               <div class="lang-icon">
-                <%=image_tag ( "JavaScript.png") %>
+                <%=image_tag ( "https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/JavaScript.png") %>
               </div>
               <div class="lang-details">
                 <p>JavaScript</p>
@@ -166,7 +158,7 @@
             </div>
             <div class="lang-wrapper">
               <div class="lang-icon">
-                <%=image_tag ( "React.png") %>
+                <%=image_tag ( "https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/React.png") %>
               </div>
               <div class="lang-details">
                 <p>React.js</p>
@@ -184,7 +176,7 @@
 
             <div class="lang-wrapper">
               <div class="lang-icon">
-                <%=image_tag ( "Rails.png") %>
+                <%=image_tag ( "https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/Rails.png") %>
               </div>
               <div class="lang-details">
                 <p>Ruby on Rails</p>
@@ -199,7 +191,7 @@
 
             <div class="lang-wrapper">
               <div class="lang-icon">
-                <%= image_tag ( "Node.png") %>
+                <%= image_tag ( "https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/Node.png") %>
               </div>
               <div class="lang-details">
                 <p>Node.js</p>
@@ -214,7 +206,7 @@
 
             <div class="lang-wrapper">
               <div class="lang-icon">
-                <%=image_tag ( "Git.png") %>
+                <%=image_tag ( "https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/Git.png") %>
               </div>
               <div class="lang-details">
                 <p>Git</p>
@@ -229,7 +221,7 @@
 
             <div class="lang-wrapper">
               <div class="lang-icon">
-                <%=image_tag ( "PS.png") %>
+                <%=image_tag ( "https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/PS.png") %>
               </div>
               <div class="lang-details">
                 <p>Adobe Photoshop</p>
@@ -245,42 +237,61 @@
           </div>
 
         </div>
-        <h4 class="tools-footer">Working in Django, Wordpress or something else? Let's discuss it!</h4>
+        <h3 class="tools-footer">Working in Django, Wordpress or something else? Let's discuss it!</h3>
       </div>
     </div>
   </div>
 
-  <div class="contact-row" id="contact">
+  <div class="content-row contact-row" id="contact">
     <div class="container">
       <div class="row">
-          <h1>Contact me.</h1>
-        <div class="col-md-6">
+          <h1 class="section-title">Contact me.</h1>
+        <div class="col-sm-6">
+          <div class="photo-group">
+            <img class="contact-image img-responsive" src="https://s3-us-west-2.amazonaws.com/mauzyio/aboutpage/bwself.jpg">
+          </div>
+          <div class="photo-group">
+            <div class="contact-info">
+              <p>Jeremy Mauzy</p>
+              <p>Chicago, IL</p>
+              <p>jeremymauzy@gmail.com</p>
+            </div>
+          </div>
+          <hr>
+          <p>I am currently taking inquiries for freelance and contract work as well as full-time employment opportunities. Feel free to reach out to me using any of the below links or this contact form.</p>
+          <hr>
+          <div class="socicon-wrapper">
+            <a href="http://twitter.com/JeremyMauzy" class="pure-button socicon-button"><span class="socicon socicon-twitter"></span></a>
+            <a href="http://www.github.com/jmauzy" class="pure-button socicon-button"><span class="socicon socicon-github"></span></a>
+            <a href="http://twitter.com/qimzu" class="pure-button socicon-button"><span class="socicon socicon-linkedin"></span></a>
+            <a href="http://twitter.com/qimzu" class="pure-button socicon-button"><span class="socicon socicon-mail"></span></a>
+          </div>
         </div>
 
-        <div class="col-md-6">
-          <p>Use this form to reach out with any questions. You can also contact me directly at <a href="mailto:jeremymauzy@gmail.com">jeremymauzy@gmail.com</a>
+        <div class="col-sm-6">
           <form accept-charset="UTF-8" action="https://formkeep.com/f/4380c545f069" method="POST">
             <input type="hidden" name="utf8" value="✓">
             <fieldset class="form-group">
               <label for="name-input">Name:</label>
-              <input type="text" name="name" id="name-input" placeholder="Your Name">
+              <input type="text" name="name" id="name-input" class="form-control">
             </fieldset>
             <fieldset class="form-group">
               <label for="email-input">Email:</label>
-              <input type="email" name="email" id="email-input" placeholder="Your Email">
+              <input type="email" name="email" id="email-input" class="form-control" >
             </fieldset>
             <fieldset class="form-group">
               <label for="phone-input">Phone:</label>
-              <input type="tel" name="phone" id="phone-input" placeholder="Phone Number">
+              <input type="tel" name="phone" id="phone-input" class="form-control" >
             </fieldset>
             <fieldset class="form-group">
               <label for="comment-input">Comment:</label>
-              <textarea type="text-area" name="comment" placeholder="Comment"></textarea>
+              <textarea type="text-area" name="comment" class="form-control"></textarea>
             </fieldset>
             <button class="btn btn-lg" type="submit">Submit</button>
           </form>
         </div>
     </div>
   </div>
-  </div>
+</div>
+  <%= render "/shared/footer" %>
 

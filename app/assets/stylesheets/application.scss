@@ -28,13 +28,10 @@
  }
  body {
  }
+ .container {
+   max-width: 955px;
+ }
 
-@media (min-width: 1200px) {
-  .container {
-        width: 970px;
-  }
-
-}
 .header {
   a {
     color: black;
@@ -115,7 +112,10 @@ pre {
 }
 
 .footer {
-  margin-bottom: 20px;
+  margin-top: -20px;
+  padding: 40px 0 20px 0;
+  color: white;
+  background-color: #262626;
   .contact-list {
     text-align: center;  
     .contact-icon {
