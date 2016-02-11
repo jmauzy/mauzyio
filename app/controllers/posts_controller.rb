@@ -8,6 +8,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id]) || Post.last
     @title = @post.title + " | Mauzy.io"
+    @archives = Post.last(10).reverse
     increment_views(@post)
   end
   

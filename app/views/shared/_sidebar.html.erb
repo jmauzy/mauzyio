@@ -1,3 +1,20 @@
-<%=render '/shared/sidebar_popular' %>
-<%=render '/shared/sidebar_about' %>
-<%=render '/shared/sidebar_tweets' %>
+<div class="archive-sidebar">
+  <h4>Recent Posts</h4> <hr>
+  <% posts.each do |post| %>
+    <p><%= link_to post.title, post %></a>
+  <% end %>
+</div>
+
+
+<div class="twitter-sidebar">
+  <h4>Tweets</h4>
+  <hr>
+  <a class="twitter-timeline" 
+  data-chrome="noheader noborders noscrollbar"
+  data-tweet-limit="5"
+  data-widget-id="600720083413962752" 
+  href="https://twitter.com/jeremymauzy"
+  width="auto"
+  data-screen-name="jeremymauzy">
+  Tweets by @JeremyMauzy</a>
+</div>

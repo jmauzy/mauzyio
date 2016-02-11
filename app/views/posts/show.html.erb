@@ -1,3 +1,5 @@
+<%= render "/shared/header" %>
+<div class="header-spacer"></div>
 <div class="container">
   <div class="row">
 
@@ -16,8 +18,9 @@
     </div>
 
     <div class="col-sm-3">
-      <%= render '/shared/sidebar' %>
+      <%= render '/shared/sidebar', posts: @archives %>
     </div>
 
   </div>
 </div>
+<%= render "shared/footer" %>
