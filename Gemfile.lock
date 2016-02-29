@@ -105,6 +105,12 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
     pg (0.18.4)
+    postmark (1.7.1)
+      json
+      rake
+    postmark-rails (0.12.0)
+      actionmailer (>= 3.0.0)
+      postmark (~> 1.7.0)
     puma (2.15.3)
     rack (1.6.4)
     rack-test (0.6.3)
@@ -212,7 +218,9 @@ DEPENDENCIES
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  mail
   pg
+  postmark-rails
   puma
   rails (= 4.2.5)
   rails_12factor

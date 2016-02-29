@@ -16,6 +16,8 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise'
 gem 'redcarpet', github: 'vmg/redcarpet' 
 gem 'coderay'
+gem 'postmark-rails'
+gem 'mail'
 
 
 # Use ActiveModel has_secure_password
