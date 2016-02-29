@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   get 'admin' => 'admin#index'
   get 'admin/new' => 'admin#new'
+
+  post 'contact_submission/' => 'mailer#submit_contact_form'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,11 +1,15 @@
 class ContactMailer < ActionMailer::Base
-  default from: "contact@mauzy.io"
+  default from: "jeremy@mauzy.io"
+  layout 'mailer'
 
-  def contact
+  def contact(name, email, phone, comment)
+      @name = name
+      @email = email
+      @phone = phone
+      @comment = comment
     mail(
-      :subject => 'Contact form submission',
+      :subject => 'Contact form submission from #{name}',
       :to => 'jeremymauzy@gmail.com',
-      :tag => 'contact'
     )
   end
 end
