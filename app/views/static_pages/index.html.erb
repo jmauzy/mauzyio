@@ -267,28 +267,32 @@
             <a href="mailto:jeremymauzy@gmail.com" class="pure-button socicon-button"><span class="socicon socicon-mail"></span></a>
           </div>
         </div>
+        
 
         <div class="col-sm-6">
-          <form accept-charset="UTF-8" action="https://formkeep.com/f/4380c545f069" method="POST">
-            <input type="hidden" name="utf8" value="✓">
-            <fieldset class="form-group">
-              <label for="name-input">Name:</label>
-              <input type="text" name="name" id="name-input" class="form-control">
-            </fieldset>
-            <fieldset class="form-group">
-              <label for="email-input">Email:</label>
-              <input type="email" name="email" id="email-input" class="form-control" >
-            </fieldset>
-            <fieldset class="form-group">
-              <label for="phone-input">Phone:</label>
-              <input type="tel" name="phone" id="phone-input" class="form-control" >
-            </fieldset>
-            <fieldset class="form-group">
-              <label for="comment-input">Comment:</label>
-              <textarea type="text-area" name="comment" class="form-control"></textarea>
-            </fieldset>
-            <button class="btn btn-lg" type="submit">Submit</button>
-          </form>
+          <%= form_tag(contact_submission_path) do %>
+            <div class="form-group">
+              <%= label_tag 'name', 'Name' %>
+              <%= text_field_tag 'name', nil, class: 'form-control' %>
+            </div>
+
+            <div class="form-group">
+              <%= label_tag 'email', 'Email' %>
+              <%= text_field_tag 'email', nil, class: 'form-control' %>
+            </div>
+
+            <div class="form-group">
+              <%= label_tag 'phone', 'Phone' %>
+              <%= text_field_tag 'phone', nil, class: 'form-control' %>
+            </div>
+
+            <div class="form-group">
+              <%= label_tag 'comment', 'Comment' %>
+              <%= text_area_tag 'comment', nil, class: 'form-control' %>
+            </div>
+
+            <%= submit_tag "Submit", class: 'btn btn-lg contact-submit-button'%>
+          <% end %>
         </div>
     </div>
   </div>
