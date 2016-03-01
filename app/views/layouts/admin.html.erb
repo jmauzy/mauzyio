@@ -10,6 +10,7 @@
 
 <div class="container">
   <%= render 'shared/header.html.erb' %>
+  <div class="header-spacer"></div>
   <p><h1>Admin Panel</h1>
    <%= link_to('Logout', destroy_admin_session_path, :method => :delete) %> 
 
@@ -20,8 +21,8 @@
 
   <a href="/admin/new"><button class="btn btn-success">Create Post</button></p></a>
   <%= yield %>
-  <%= render 'shared/footer.html.erb' %>
 </div>
 
+  <%= render 'shared/footer.html.erb' %>
 </body>
 </html>

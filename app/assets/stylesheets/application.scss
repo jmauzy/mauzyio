@@ -26,14 +26,23 @@
 
    //border: 1px solid black;
  }
- body {
- }
- .site-wrapper{
-   overflow-x: hidden;
- }
- .container {
-   max-width: 955px;
- }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 90px;
+}
+
+.site-wrapper{
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 955px;
+}
 
 @media screen and (max-width: 767px) {
    .twitter-sidebar, .about-sidebar { display: none;  }
@@ -73,6 +82,10 @@ pre {
 }
 
 .footer {
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   padding: 40px 0 20px 0;
   color: white;
   background-color: #262626;
