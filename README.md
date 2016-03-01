@@ -6,6 +6,7 @@ The aim of this project is to create a full featured blog and portfolio site wit
 + Basic authentication wtih Devise
 + Custom admin panel with page stats and management
 + Mobile friendly design using Bootstrap grid layout
++ Contact mailer on landing page using ActionMailer & Postmark
 
 ###Planned features:
 + Interactive portfolio page with popout descriptions of projects
