@@ -1,4 +1,5 @@
 class MailerController < ApplicationController
+  layout "application"
 
   def submit_contact_form
     name = params[:name]
@@ -7,7 +8,6 @@ class MailerController < ApplicationController
     comment = params[:comment]
     mail = ContactMailer.contact(name, email, phone, comment)
     mail.deliver
-    redirect_to root_path
   end
 end
 
